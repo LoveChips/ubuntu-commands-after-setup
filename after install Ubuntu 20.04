@@ -1,0 +1,60 @@
+# Disable webcam
+sudo gedit /etc/modprobe.d/blacklist.conf
+
+--add these two lines
+
+# Disable webcam
+blacklist uvcvideo
+
+
+# Bluetooth change AutoEnable from True to False
+sudo gedit /etc/bluetooth/main.conf
+AutoEnable=false
+
+# change desktop background / remove picture and change to blank
+gsettings set org.gnome.desktop.background picture-uri ''
+gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
+
+sudo apt update
+
+sudo apt install ubuntustudio-installer
+sudo snap install htop
+sudo snap install chromium
+
+# Install Gnome Tweak tool with fix for chromium
+
+sudo apt install gnome-tweak-tool
+sudo apt-get install chrome-gnome-shell
+sudo apt-get install libproxy1-plugin-networkmanager gnome-shell-extension-system-monitor
+killall -3 gnome-shell
+
+wget https://raw.githubusercontent.com/paradoxxxzero/gnome-shell-system-monitor-applet/fac6b7646346264bd75813a9d606dd5ba5152d6b/system-monitor%40paradoxxx.zero.gmail.com/extension.js -O ~/.local/share/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com/extension.js
+
+dash to dock - https://extensions.gnome.org/extension/307/dash-to-dock/
+
+# Remove Firefox
+sudo apt purge firefox
+
+# OBS Preparation
+sudo apt install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+
+sudo apt install obs-studio
+
+# Bitwig Preparation
+sudo apt install gdebi-core
+sudo gdebi bitwig-studio-3.3.1.deb
+sudo chmod -R 777 /opt/bitwig-studio/bin/
+
+sudo apt install gimp
+sudo apt install krita
+sudo apt install kdenlive
+sudo apt install blender
+sudo apt install inkscape
+
+
+
+
+
+
