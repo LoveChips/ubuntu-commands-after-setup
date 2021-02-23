@@ -53,7 +53,7 @@ sudo apt install kdenlive
 sudo apt install blender
 sudo apt install inkscape
 
-
+sudo apt install libreoffice-gnome libreoffice
 
 
 
