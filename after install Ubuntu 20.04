@@ -69,4 +69,20 @@ https://team-crew.github.io/repository.thecrew-0.3.1.zip
  sudo apt-get update 
  sudo apt-get install libportaudio2 mixxx
 
+cd Downloads
+mkdir ProjectM
+cp projectm-master.zip ProjectM
+cd ProjectM
+unzip projectm-master.zip
+cd projectm-master
+sudo apt install libtool pkg-config libglm-dev qt5-default qtdeclarative5-dev libgles2-mesa-dev libpulse-dev
+autoreconf --install
+./configure --enable-pulseaudio --enable-qt --enable-gles LIBS="-lQt5Gui -lQt5OpenGL"
+make
+sudo make install
+
+Then move project M from Downloads to Docs folder, set path to presets in docs/projectM
+Edit settings - uncheck try first available monitor - set to Jack_Out_Monitor Then goto PulseAudioSettings "Input Devices" show Monitors.
+
+
 
