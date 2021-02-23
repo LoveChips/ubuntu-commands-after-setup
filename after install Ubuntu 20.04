@@ -52,9 +52,14 @@ sudo apt install krita
 sudo apt install kdenlive
 sudo apt install blender
 sudo apt install inkscape
+sudo apt install kodi
 
 sudo apt install libreoffice-gnome libreoffice
 
 
+To remove a particular icon but keep application installed for terminal use -
 
+cd /usr/share/applications
+
+sudo rm <name-of-application>.desktop
 
