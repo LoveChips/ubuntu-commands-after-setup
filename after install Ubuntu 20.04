@@ -85,5 +85,5 @@ sudo make install
 Then move project M from Downloads to Docs folder, set path to presets in docs/projectM
 Edit settings - uncheck try first available monitor - set to Jack_Out_Monitor Then goto PulseAudioSettings "Input Devices" show Monitors.
 
-
+Cream of the crop list - https://thefulldomeblog.com/2020/02/21/nestdrop-presets-collection-cream-of-the-crop/
 
