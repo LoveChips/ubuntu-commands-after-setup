@@ -69,6 +69,7 @@ https://team-crew.github.io/repository.thecrew-0.3.1.zip
  sudo apt-get update 
  sudo apt-get install libportaudio2 mixxx
 
+ProjectM Install  Clone https://github.com/projectM-visualizer/projectM
 cd Downloads
 mkdir ProjectM
 cp projectm-master.zip ProjectM
