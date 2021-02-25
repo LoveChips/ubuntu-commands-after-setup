@@ -87,3 +87,4 @@ Edit settings - uncheck try first available monitor - set to Jack_Out_Monitor Th
 
 Cream of the crop list - https://thefulldomeblog.com/2020/02/21/nestdrop-presets-collection-cream-of-the-crop/
 
+sudo apt install dconf-editor (alt + F2 then type dconf-editor) org -> gnome -> terminal -> legacy and uncheck confirm-close.
